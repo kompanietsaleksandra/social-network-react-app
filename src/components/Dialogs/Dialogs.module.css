@@ -1,0 +1,23 @@
+
+.wrapper {
+    background-color: darkcyan;
+    height: 100%;
+}
+
+.grid {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.dialogsItems .active {
+    color: gold;
+}
+
+.dialogsItems {
+    display: flex;
+    flex-direction: column;
+}
