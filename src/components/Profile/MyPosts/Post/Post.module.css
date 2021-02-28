@@ -1,0 +1,11 @@
+
+.postimg {
+    width: 50px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.grid {
+    display: flex;
+    margin-top: 15px;
+}

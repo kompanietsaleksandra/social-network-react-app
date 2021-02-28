@@ -1,0 +1,23 @@
+
+.content {
+    grid-area: c;
+    background-color: bisque;
+}
+
+.imgfoto img {
+    height: 250px;
+    width: 250px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.gridItem {
+    margin: 10px;
+}
+
+.posts {
+    padding-left: 10px;
+}
