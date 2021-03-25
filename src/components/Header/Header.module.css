@@ -13,6 +13,9 @@
 .header {
     grid-area: h;
     background-color: seagreen;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
 }
 
 .header img {
@@ -20,3 +23,9 @@
     height: 50px;
 }
 
+.loginblock a {
+    color: aliceblue;
+    font-size: 26px;
+    text-decoration: none;
+
+}
