@@ -2,6 +2,7 @@
 .content {
     grid-area: c;
     background-color: bisque;
+    padding-left: 10px;
 }
 
 .imgback img {
