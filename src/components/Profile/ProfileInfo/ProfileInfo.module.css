@@ -2,3 +2,9 @@
     height: 500px;
     width: 100%;
 }
+
+.profileStatus {
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 6px;
+}

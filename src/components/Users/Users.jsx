@@ -6,7 +6,7 @@ import {NavLink} from "react-router-dom";
 let Users = (props) => {
     let pagesCount =  Math.ceil(props.totalUsersCount / props.pageSize);
     let pages = [];
-    for(let i = 1; i <= pagesCount; i++) {
+    for(let i = 1; i <= pagesCount - 95; i++) {
         pages.push(i);
     }
     return (
@@ -24,9 +24,13 @@ let Users = (props) => {
                     <img src={u.photos.small != null ? u.photos.small: userPhoto} className={classes.userPhoto}/>
                 </NavLink>
                 <div>
-                    {u.followed ? <button onClick={() => {props.unfollow(u.id) }}>UnFollow</button>
-                        : <button onClick={() => {props.follow(u.id) }}>Follow</button>}
-
+                    {u.followed
+                        ? <button disabled={props.followingInProgress.some( id => id === u.id)}
+                                  onClick={() => { props.unfollow(u.id)}}>
+                            UnFollow</button>
+                        : <button disabled={props.followingInProgress.some( id => id === u.id)}
+                                  onClick={() => { props.follow(u.id)
+                            }}>Follow</button>}
                 </div>
             </span>
                 <span>
